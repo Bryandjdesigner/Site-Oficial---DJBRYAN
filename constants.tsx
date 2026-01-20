@@ -40,30 +40,30 @@ export const UPCOMING_EVENTS: Event[] = [
 export const TOP_TRACKS: Track[] = [
   {
     id: 1,
-    title: 'Summer Vibes (Original Mix)',
+    title: 'Despertar do Grave',
     genre: 'House',
     duration: '3:45',
     plays: '1.2M',
-    image: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=200&auto=format&fit=crop',
-    spotifyUrl: 'https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ'
+    image: 'https://i.imgur.com/61YVTkw.jpeg',
+    url: 'https://music.youtube.com/watch?v=P633IdQkKjk&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI'
   },
   {
     id: 2,
-    title: 'Deep Thoughts',
-    genre: 'Techno',
-    duration: '4:20',
-    plays: '850K',
-    image: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=200&auto=format&fit=crop',
-    spotifyUrl: 'https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ'
+    title: 'Barril dobrado',
+    genre: 'Funk',
+    duration: '3:10',
+    plays: '950K',
+    image: 'https://i.imgur.com/fbbLk64.jpeg',
+    url: 'https://music.youtube.com/watch?v=BwKsRwO0OtQ&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI'
   },
   {
     id: 3,
-    title: 'Festival Anthem',
+    title: 'Trópiko',
     genre: 'Progressive',
     duration: '5:15',
     plays: '500K',
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=200&auto=format&fit=crop',
-    spotifyUrl: 'https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ'
+    image: 'https://i.imgur.com/uYWaeRF.jpeg',
+    url: 'https://music.youtube.com/watch?v=kJBihqmo7Vg&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI'
   }
 ];
 

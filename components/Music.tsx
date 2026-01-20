@@ -43,7 +43,7 @@ const Music: React.FC = () => {
           {TOP_TRACKS.map((track, index) => (
             <a 
               key={track.id} 
-              href={track.spotifyUrl}
+              href={track.url}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center bg-black/40 backdrop-blur-sm border border-white/5 hover:bg-white/10 p-4 rounded-xl transition-all cursor-pointer"

@@ -16,7 +16,7 @@ export interface Track {
   duration: string;
   plays: string;
   image: string;
-  spotifyUrl: string;
+  url: string;
 }
 
 export interface SocialLink {
