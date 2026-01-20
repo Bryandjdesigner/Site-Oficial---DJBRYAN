@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black z-20"></div>
         <img
           src="https://images.unsplash.com/photo-1571266028243-371695039989?q=80&w=2070&auto=format&fit=crop"
-          alt="DJ Crowd"
+          alt="Event Background"
           className="w-full h-full object-cover"
         />
       </div>

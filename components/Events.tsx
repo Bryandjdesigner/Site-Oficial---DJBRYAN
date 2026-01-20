@@ -17,20 +17,43 @@ const Events: React.FC = () => {
         <div className="grid lg:grid-cols-3 gap-8">
           {UPCOMING_EVENTS.map((event, index) => (
             <div key={event.id} className="group relative bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-neon-pink/50 transition-all duration-300 flex flex-col">
-              {/* Image */}
-              <div className="h-48 overflow-hidden relative">
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors z-10"></div>
-                <img
-                  src={event.image}
-                  alt={event.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
-                
-                {/* Date Badge */}
-                {event.date && (
-                   <div className="absolute top-4 left-4 z-20 bg-neon-pink text-black font-bold px-3 py-1 text-sm rounded">
-                    {event.date}
-                  </div>
+              {/* Image Area */}
+              <div className="h-48 overflow-hidden relative bg-black">
+                {event.id === 3 ? (
+                  // Custom Animation for "Em Aberto" (ID 3)
+                  <>
+                    <div className="absolute inset-0 bg-slate-900"></div>
+                    {/* Grid Pattern */}
+                    <div className="absolute inset-0 opacity-20" style={{
+                      backgroundImage: 'linear-gradient(rgba(4, 217, 255, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(4, 217, 255, 0.3) 1px, transparent 1px)',
+                      backgroundSize: '30px 30px'
+                    }}></div>
+                    {/* Scanline Effect */}
+                    <div className="scanline-container"></div>
+                    {/* Pulsing Center Text */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="text-neon-blue font-display font-bold text-2xl animate-pulse tracking-widest">
+                            EM BREVE
+                        </span>
+                    </div>
+                  </>
+                ) : (
+                  // Standard Image for other events
+                  <>
+                    <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors z-10"></div>
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    
+                    {/* Date Badge only for real events */}
+                    {event.date && (
+                      <div className="absolute top-4 left-4 z-20 bg-neon-pink text-black font-bold px-3 py-1 text-sm rounded">
+                        {event.date}
+                      </div>
+                    )}
+                  </>
                 )}
 
                 {/* Numbering */}
@@ -65,6 +88,8 @@ const Events: React.FC = () => {
                     {event.ticketLink ? (
                     <a
                         href={event.ticketLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center w-full py-3 bg-white/10 hover:bg-neon-pink hover:text-black text-white font-bold uppercase text-sm tracking-wider rounded transition-all"
                     >
                         <Ticket className="w-4 h-4 mr-2" />

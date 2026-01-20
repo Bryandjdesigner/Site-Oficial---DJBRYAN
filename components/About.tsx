@@ -17,18 +17,30 @@ const About: React.FC = () => {
           </div>
 
           {/* Text Content */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
               A Batida que <span className="text-neon-blue">Move Você</span>
             </h2>
+            
             <p className="text-gray-400 text-lg leading-relaxed">
-              Com mais de uma década dominando as pistas, <strong className="text-white">DJ Bryan</strong> não toca apenas músicas; ele cria atmosferas. Sua jornada começou nos clubes underground de São Paulo e rapidamente escalou para os principais festivais do Brasil.
-            </p>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              Conhecido por sua versatilidade técnica e leitura de pista impecável, Bryan transita fluidamente entre o Deep House melódico e o Techno pulsante, garantindo que a energia nunca caia.
+              <strong className="text-white">DJ BRYAN</strong> é a definição do artista multimídia contemporâneo. Nascido em Salvador, o berço rítmico do Brasil, ele carrega em seu DNA o groove do Pagodão e a energia solar da Bahia.
             </p>
 
-            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10">
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold text-neon-green">Experiência Internacional e Versatilidade</h3>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                Sua carreira ganhou projeção e sofisticação durante sua trajetória no Club Med, onde atuou como DJ e entertainer. Essa fase foi fundamental para lapidar sua leitura de pista, atendendo a públicos de diversas nacionalidades e dominando a arte de misturar ritmos globais com a essência brasileira.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold text-neon-purple">A Conexão Rio-Bahia</h3>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                Em sua passagem pelo Rio de Janeiro, Bryan mergulhou na cena urbana e eletrônica da capital fluminense, expandindo suas referências e consolidando sua rede de contatos profissionais. Essa bagagem carioca trouxe ao seu som uma estética moderna, resultando em produções que hoje navegam com maestria entre o Afro House, o Brazilian Bass e as batidas eletrônicas de vanguarda.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 mt-6">
               <div className="text-center">
                 <span className="block text-3xl md:text-4xl font-display font-bold text-neon-green mb-2">10+</span>
                 <span className="text-xs uppercase tracking-widest text-gray-500">Anos de Carreira</span>

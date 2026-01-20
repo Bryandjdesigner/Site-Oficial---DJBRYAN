@@ -77,6 +77,20 @@
         80% { clip: rect(86px, 9999px, 15px, 0); }
         100% { clip: rect(34px, 9999px, 56px, 0); }
       }
+      
+      /* New Scanline Animation */
+      .scanline-container {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, transparent, rgba(4, 217, 255, 0.2), transparent);
+        animation: scanline 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        transform: translateY(-100%);
+      }
+      
+      @keyframes scanline {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(100%); }
+      }
     </style>
   <script type="importmap">
 {
