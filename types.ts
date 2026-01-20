@@ -7,6 +7,7 @@ export interface Event {
   location: string;
   image: string;
   ticketLink?: string;
+  time?: string;
 }
 
 export interface Track {

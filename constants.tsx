@@ -13,27 +13,27 @@ export const NAV_LINKS = [
 export const UPCOMING_EVENTS: Event[] = [
   {
     id: 1,
-    title: 'Neon Nights Festival',
-    date: '15 AGO 2025',
-    location: 'São Paulo, SP',
+    title: 'Festa Privada',
+    date: '07 FEV 2026',
+    location: 'Salvador-BA',
     image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop',
-    ticketLink: '#'
+    time: '18:00 - 22:00'
   },
   {
     id: 2,
-    title: 'Sunset Club Opening',
-    date: '22 AGO 2025',
-    location: 'Rio de Janeiro, RJ',
-    image: 'https://images.unsplash.com/photo-1574391884720-2e4537723bcd?q=80&w=2070&auto=format&fit=crop',
-    ticketLink: '#'
+    title: 'Em Aberto',
+    date: 'Em Breve',
+    location: '',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop',
+    time: ''
   },
   {
     id: 3,
-    title: 'Underground Warehouse',
-    date: '05 SET 2025',
-    location: 'Curitiba, PR',
-    image: 'https://images.unsplash.com/photo-1576430652033-6627bd365922?q=80&w=2070&auto=format&fit=crop',
-    ticketLink: '#'
+    title: 'Em Aberto',
+    date: 'Em Breve',
+    location: '',
+    image: 'https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?q=80&w=2070&auto=format&fit=crop',
+    time: ''
   }
 ];
 
