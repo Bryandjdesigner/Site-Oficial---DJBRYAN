@@ -41,7 +41,7 @@ export const TOP_TRACKS: Track[] = [
   {
     id: 1,
     title: 'Despertar do Grave',
-    genre: 'House',
+    genre: 'Afro House',
     duration: '3:45',
     plays: '1.2M',
     image: 'https://i.imgur.com/61YVTkw.jpeg',
@@ -50,7 +50,7 @@ export const TOP_TRACKS: Track[] = [
   {
     id: 2,
     title: 'Barril dobrado',
-    genre: 'Funk',
+    genre: 'Trap',
     duration: '3:10',
     plays: '950K',
     image: 'https://i.imgur.com/fbbLk64.jpeg',
