@@ -29,12 +29,12 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           <a
-            href="https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ"
+            href="https://open.spotify.com/track/32xPLSqoGN6bng8gLyJdpL?si=OdwpMjJAQy6T40_KUrEnHw"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-neon-purple hover:bg-neon-purple/80 text-white font-bold uppercase tracking-widest rounded-sm transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(176,38,255,0.5)]"
           >
-            Ouvir Sets
+            Lançamento
           </a>
           <a
             href="#schedule"
