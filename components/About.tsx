@@ -50,7 +50,7 @@ const About: React.FC = () => {
                 <span className="text-xs uppercase tracking-widest text-gray-500">Shows Realizados</span>
               </div>
               <div className="text-center">
-                <span className="block text-3xl md:text-4xl font-display font-bold text-neon-pink mb-2">1M+</span>
+                <span className="block text-3xl md:text-4xl font-display font-bold text-neon-pink mb-2">+200M</span>
                 <span className="text-xs uppercase tracking-widest text-gray-500">Streams</span>
               </div>
             </div>
