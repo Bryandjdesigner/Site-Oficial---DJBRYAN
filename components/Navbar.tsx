@@ -14,10 +14,35 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const targetId = href.replace('#', '');
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+        
+        setIsOpen(false);
+      }
+    }
+  };
+
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md py-4 border-b border-white/10' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="#home" className="flex items-center gap-2 group">
+        <a 
+          href="#home" 
+          className="flex items-center gap-2 group"
+          onClick={(e) => handleNavClick(e, '#home')}
+        >
           <Disc className="w-8 h-8 text-neon-green group-hover:rotate-180 transition-transform duration-700" />
           <span className="text-2xl font-display font-bold tracking-wider text-white">
             DJ <span className="text-neon-blue">BRYAN</span>
@@ -30,6 +55,7 @@ const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-neon-green transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-neon-green after:transition-all hover:after:w-full"
             >
               {link.name}
@@ -37,6 +63,7 @@ const Navbar: React.FC = () => {
           ))}
           <a
             href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
             className="px-6 py-2 bg-gradient-to-r from-neon-purple to-neon-blue text-white font-bold uppercase text-xs tracking-wider rounded hover:opacity-90 transition-opacity"
           >
             Book Now
@@ -59,8 +86,8 @@ const Navbar: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-lg font-bold uppercase tracking-widest text-white hover:text-neon-green transition-colors"
-              onClick={() => setIsOpen(false)}
             >
               {link.name}
             </a>
