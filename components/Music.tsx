@@ -28,7 +28,7 @@ const Music: React.FC = () => {
               Spotify
             </a>
             <a 
-              href="https://music.youtube.com/"
+              href="https://music.youtube.com/watch?v=P633IdQkKjk&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 border border-red-600 text-red-500 hover:bg-red-600 hover:text-white font-bold uppercase tracking-widest text-xs rounded transition-all"

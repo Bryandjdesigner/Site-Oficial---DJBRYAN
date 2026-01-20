@@ -1,6 +1,6 @@
 import React from 'react';
 import { Event, Track } from './types';
-import { Instagram, Youtube, Music, Twitter, Facebook } from 'lucide-react';
+import { Instagram, Youtube, Music } from 'lucide-react';
 
 export const NAV_LINKS = [
   { name: 'Início', href: '#home' },
@@ -68,9 +68,7 @@ export const TOP_TRACKS: Track[] = [
 ];
 
 export const SOCIAL_LINKS = [
-  { platform: 'Instagram', url: '#', icon: <Instagram className="w-6 h-6" /> },
-  { platform: 'Spotify', url: '#', icon: <Music className="w-6 h-6" /> },
-  { platform: 'Youtube', url: '#', icon: <Youtube className="w-6 h-6" /> },
-  { platform: 'Twitter', url: '#', icon: <Twitter className="w-6 h-6" /> },
-  { platform: 'Facebook', url: '#', icon: <Facebook className="w-6 h-6" /> },
+  { platform: 'Instagram', url: 'https://instagram.com/djbryan', icon: <Instagram className="w-6 h-6" /> },
+  { platform: 'Spotify', url: 'https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ', icon: <Music className="w-6 h-6" /> },
+  { platform: 'Youtube', url: 'https://www.youtube.com/@djbryanclub/videos?app=desktop&view=0&sort=dd&shelf_id=1', icon: <Youtube className="w-6 h-6" /> },
 ];
