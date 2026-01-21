@@ -44,7 +44,7 @@ export const TOP_TRACKS: Track[] = [
     title: 'Despertar do Grave',
     genre: 'Afro House',
     duration: '3:45',
-    plays: '1.2M',
+    likes: 12450,
     image: 'https://i.imgur.com/61YVTkw.jpeg',
     url: 'https://music.youtube.com/watch?v=P633IdQkKjk&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI'
   },
@@ -53,7 +53,7 @@ export const TOP_TRACKS: Track[] = [
     title: 'Barril dobrado',
     genre: 'Trap',
     duration: '3:10',
-    plays: '950K',
+    likes: 9830,
     image: 'https://i.imgur.com/fbbLk64.jpeg',
     url: 'https://music.youtube.com/watch?v=BwKsRwO0OtQ&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI'
   },
@@ -62,7 +62,7 @@ export const TOP_TRACKS: Track[] = [
     title: 'Trópiko',
     genre: 'Progressive',
     duration: '5:15',
-    plays: '500K',
+    likes: 5420,
     image: 'https://i.imgur.com/uYWaeRF.jpeg',
     url: 'https://music.youtube.com/watch?v=kJBihqmo7Vg&list=OLAK5uy_l5cuEeA3xDJqf6Dt7CTrN-6r2QTM_WhuI'
   }

@@ -10,16 +10,13 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black z-20"></div>
         <img
           src="https://images.unsplash.com/photo-1571266028243-371695039989?q=80&w=2070&auto=format&fit=crop"
-          alt="DJ Bryan Background"
+          alt=""
           className="w-full h-full object-cover"
         />
       </div>
 
       {/* Content */}
       <div className="relative z-30 container mx-auto px-4 text-center">
-        <h2 className="text-neon-green font-display font-bold tracking-[0.2em] mb-4 text-sm md:text-xl uppercase animate-pulse">
-          Official Website
-        </h2>
         <h1 className="font-display font-black text-6xl md:text-8xl lg:text-9xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 glitch" data-text="DJ BRYAN">
           DJ BRYAN
         </h1>

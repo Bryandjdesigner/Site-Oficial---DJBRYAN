@@ -15,7 +15,7 @@ export interface Track {
   title: string;
   genre: string;
   duration: string;
-  plays: string;
+  likes: number;
   image: string;
   url: string;
 }
