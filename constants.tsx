@@ -69,7 +69,7 @@ export const TOP_TRACKS: Track[] = [
 ];
 
 export const SOCIAL_LINKS = [
-  { platform: 'Instagram', url: 'https://www.instagram.com/djbryanclub/reels/', icon: <Instagram className="w-6 h-6" /> },
+  { platform: 'Instagram', url: 'https://www.instagram.com/djbryanclub?igsh=NnhpenB1djc3MWlu', icon: <Instagram className="w-6 h-6" /> },
   { platform: 'Spotify', url: 'https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ', icon: <Music className="w-6 h-6" /> },
   { platform: 'Youtube', url: 'https://www.youtube.com/@djbryanclub/videos?app=desktop&view=0&sort=dd&shelf_id=1', icon: <Youtube className="w-6 h-6" /> },
 ];
