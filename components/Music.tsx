@@ -9,14 +9,13 @@ interface TrackWithState extends Track {
 }
 
 const Music: React.FC = () => {
-  // Initialize state with tracks and an 'isLiked' property
   const [tracks, setTracks] = useState<TrackWithState[]>(
     TOP_TRACKS.map(track => ({ ...track, isLiked: false }))
   );
 
   const handleLike = (e: React.MouseEvent, id: number) => {
     e.preventDefault();
-    e.stopPropagation(); // Prevent opening the link when clicking the heart
+    e.stopPropagation();
 
     setTracks(currentTracks => 
       currentTracks.map(track => {
@@ -40,17 +39,32 @@ const Music: React.FC = () => {
   return (
     <Section id="music" className="bg-black bg-mesh bg-cover bg-no-repeat bg-fixed">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-          <div>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-2">
-              Últimos <span className="text-neon-green">Lançamentos</span>
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div className="relative group">
+            {/* Som/Onda Sonora Efeito */}
+            <div className="absolute -inset-x-4 inset-y-0 flex items-center justify-between pointer-events-none opacity-40 overflow-hidden">
+               {Array.from({ length: 35 }).map((_, i) => (
+                 <div 
+                   key={i} 
+                   className="w-1 bg-neon-green rounded-full animate-soundwave"
+                   style={{ 
+                     height: `${Math.random() * 80 + 20}%`,
+                     animationDelay: `${i * 0.05}s`,
+                     animationDuration: `${0.8 + Math.random() * 0.8}s`
+                   }}
+                 />
+               ))}
+            </div>
+
+            <h2 className="relative text-4xl md:text-6xl font-display font-bold text-white mb-2 py-4">
+              Últimos <span className="text-neon-green drop-shadow-[0_0_10px_rgba(57,255,20,0.5)]">Lançamentos</span>
             </h2>
-            <p className="text-gray-300 max-w-lg">
+            <p className="relative text-gray-300 max-w-lg">
               Ouça as faixas originais, remixes e sets exclusivos diretamente do estúdio.
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 relative z-20">
             <a 
               href="https://open.spotify.com/track/59nCtzilZ0ByD51KTgO5GL?si=uKocv57mS1ahBcTSgHRhFQ"
               target="_blank"
@@ -97,7 +111,6 @@ const Music: React.FC = () => {
                 <p className="text-sm text-gray-400">{track.genre}</p>
               </div>
 
-              {/* Likes Section - Replacing Plays */}
               <div className="flex items-center gap-2 mr-6 md:mr-10">
                 <button 
                   className={`transition-all duration-300 transform hover:scale-125 ${track.isLiked ? 'text-neon-pink' : 'text-gray-500 hover:text-neon-pink'}`}

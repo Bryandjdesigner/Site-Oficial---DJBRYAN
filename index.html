@@ -78,7 +78,6 @@
         100% { clip: rect(34px, 9999px, 56px, 0); }
       }
       
-      /* New Scanline Animation */
       .scanline-container {
         position: absolute;
         inset: 0;
@@ -90,6 +89,15 @@
       @keyframes scanline {
         0% { transform: translateY(-100%); }
         100% { transform: translateY(100%); }
+      }
+
+      /* Soundwave Animation */
+      @keyframes soundwave-bar {
+        0%, 100% { height: 10%; opacity: 0.3; }
+        50% { height: 100%; opacity: 0.8; }
+      }
+      .animate-soundwave {
+        animation: soundwave-bar 1.2s ease-in-out infinite;
       }
     </style>
   <script type="importmap">
@@ -110,53 +118,3 @@
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Meu Site com Som</title>
-    <style>
-        /* Estilo do botão no canto da tela */
-        .controles {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 100;
-        }
-        button {
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Bem-vindo ao meu site!</h1>
-
-    <div class="controles">
-        <audio id="meuAudio" loop>
-            <source src="musica.mp3" type="audio/mpeg">
-        </audio>
-        
-        <button onclick="alternarSom()" id="btnSom">🔈 Som: OFF</button>
-    </div>
-
-    <script>
-        var audio = document.getElementById("meuAudio");
-        var btn = document.getElementById("btnSom");
-
-        function alternarSom() {
-            if (audio.paused) {
-                audio.play();
-                btn.innerHTML = "🔊 Som: ON";
-            } else {
-                audio.pause();
-                btn.innerHTML = "🔈 Som: OFF";
-            }
-        }
-    </script>
-</body>
-</html>
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
